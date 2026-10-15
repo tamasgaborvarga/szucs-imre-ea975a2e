@@ -6,7 +6,10 @@
 <title>A Miska-kancsó védelmében II.: a Miska-kancsó szakrális üzenetei – Szűcs Imre fazekas</title>
 <meta name="description" content="A Miska-kancsó a magyar fazekas népművészet gyöngyszeme, ikonikus alakja, azonban a szakrális jelképisége túlmutat e nemes edénynek a fazekas hagyományok…">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#f4eee1">
+<meta name="theme-color" content="#f4eee1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1b1611" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<script>try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <meta property="og:type" content="website">
 <meta property="og:locale" content="hu_HU">
 <meta property="og:site_name" content="Szűcs Imre fazekas népi iparművész">
@@ -24,8 +27,11 @@
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="../index.html"><b>Szűcs Imre</b><span>fazekas népi iparművész · Tiszafüred</span></a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menü</button>
     <nav class="nav" id="nav" aria-label="Főmenü"><ul><li><a href="../alkotasok.html">Alkotások</a></li><li><a href="../muhely.html">A műhely</a></li><li><a href="../alkotok.html">Alkotók</a></li><li><a href="../gyujtemenyes-haz.html">Gyűjteményes Ház</a></li><li><a href="../irasok.html" aria-current="page">Írások</a></li><li><a href="../kapcsolat.html">Kapcsolat</a></li></ul></nav>
+    <div class="head-tools">
+      <button class="theme-toggle" type="button" aria-pressed="false" hidden>Sötét</button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menü</button>
+    </div>
   </div>
 </header>
 <main id="main">

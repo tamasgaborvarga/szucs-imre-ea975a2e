@@ -3,6 +3,30 @@
   'use strict';
   document.documentElement.classList.remove('no-js');
 
+  // sötét / világos mód
+  var th = document.querySelector('.theme-toggle');
+  if (th) {
+    var mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+    var current = function () {
+      var a = document.documentElement.getAttribute('data-theme');
+      return a || (mq && mq.matches ? 'dark' : 'light');
+    };
+    var label = function () {
+      var d = current() === 'dark';
+      th.textContent = d ? 'Világos' : 'Sötét';
+      th.setAttribute('aria-pressed', d ? 'true' : 'false');
+      th.setAttribute('aria-label', d ? 'Váltás világos módra' : 'Váltás sötét módra');
+    };
+    th.hidden = false; label();
+    th.addEventListener('click', function () {
+      var n = current() === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', n);
+      try { localStorage.setItem('theme', n); } catch (e) {}
+      label();
+    });
+    if (mq && mq.addEventListener) mq.addEventListener('change', label);
+  }
+
   // mobilmenü
   var tg = document.querySelector('.nav-toggle'), nav = document.getElementById('nav');
   if (tg && nav) {
