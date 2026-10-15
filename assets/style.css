@@ -33,52 +33,52 @@
   color-scheme:light;
 }
 
-/* sötét mód: meleg, égetett agyag-barna alap; a kerámiafotók színe változatlan */
+/* sötét mód: meleg, közepesen sötét „égetett föld” alap; a kerámiafotók színe változatlan */
 :root[data-theme="dark"]{
-  --paper:#19140f;
-  --paper-2:#221b15;
-  --sand:#3c3026;
-  --rule:#3e352c;
-  --ink:#eee5d4;
-  --ink-2:#c5b9a7;
+  --paper:#312821;
+  --paper-2:#3a3129;
+  --sand:#594a3c;
+  --rule:#564b41;
+  --ink:#f2eadb;
+  --ink-2:#cec2b2;
   --green:#acc7a6;
   --green-2:#cde3c8;
-  --clay:#d89d7a;
-  --strong:#746656;
-  --band:#100b07;
-  --band-fg:#eee5d4;
-  --band-accent:#d89d7a;
-  --link:#eee5d4;
-  --link-line:#a47456;
-  --link-hover:#d89d7a;
-  --btn:#335a3c;
-  --btn-h:#426f4c;
-  --btn-fg:#eee5d4;
-  --ghost-line:#746656;
+  --clay:#e7ac88;
+  --strong:#8d7d6c;
+  --band:#241c17;
+  --band-fg:#f2eadb;
+  --band-accent:#e7ac88;
+  --link:#f2eadb;
+  --link-line:#b78567;
+  --link-hover:#e7ac88;
+  --btn:#376040;
+  --btn-h:#487552;
+  --btn-fg:#f2eadb;
+  --ghost-line:#8d7d6c;
   color-scheme:dark;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --paper:#19140f;
-    --paper-2:#221b15;
-    --sand:#3c3026;
-    --rule:#3e352c;
-    --ink:#eee5d4;
-    --ink-2:#c5b9a7;
+    --paper:#312821;
+    --paper-2:#3a3129;
+    --sand:#594a3c;
+    --rule:#564b41;
+    --ink:#f2eadb;
+    --ink-2:#cec2b2;
     --green:#acc7a6;
     --green-2:#cde3c8;
-    --clay:#d89d7a;
-    --strong:#746656;
-    --band:#100b07;
-    --band-fg:#eee5d4;
-    --band-accent:#d89d7a;
-    --link:#eee5d4;
-    --link-line:#a47456;
-    --link-hover:#d89d7a;
-    --btn:#335a3c;
-    --btn-h:#426f4c;
-    --btn-fg:#eee5d4;
-    --ghost-line:#746656;
+    --clay:#e7ac88;
+    --strong:#8d7d6c;
+    --band:#241c17;
+    --band-fg:#f2eadb;
+    --band-accent:#e7ac88;
+    --link:#f2eadb;
+    --link-line:#b78567;
+    --link-hover:#e7ac88;
+    --btn:#376040;
+    --btn-h:#487552;
+    --btn-fg:#f2eadb;
+    --ghost-line:#8d7d6c;
     color-scheme:dark;
   }
 }
